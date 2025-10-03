@@ -1,31 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-h1{
+h2 {
     color: white;
     font-family: "Playfair Display", sans-serif;
 }
 
-body{
+body {
     font-family: "Poppins", sans-serif;
 }
 
-.text{
+.text {
     color: white;
     font-weight: 300;
 }
 
 /* NAV BAR */
-.navbar-brand{
+.navbar-brand {
     font-family: "Playfair Display", sans-serif;
 }
 
 .overlay-navbar {
-    position: absolute;   
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;         
+    z-index: 10;
     background-color: rgba(27, 42, 43, 0.66);
     padding: 10px 20px;
 }
@@ -36,18 +36,19 @@ body{
 }
 
 .overlay-navbar .nav-link:hover {
-    color: #FDEFF3; /* soft pink hover */
+    color: #FDEFF3;
+    /* soft pink hover */
 }
 
 /* LANDING */
-.landing-image{
+.landing-image {
     width: 100%;
 }
 
-.wrapper{
+.wrapper {
     background: url(../assets/landing.jpg) no-repeat center/cover;
     position: relative;
-    width: 100%; 
+    width: 100%;
     height: 95vh;
     min-height: 600px;
     display: flex;
@@ -55,15 +56,15 @@ body{
     justify-content: center;
 }
 
-.landing-action{
+.landing-action {
     background-color: rgba(27, 42, 43, 0.66);
     margin: 0 auto;
     padding: 5% 10%;
-    width: 50%;   
+    width: 50%;
     text-align: center;
 }
 
-.landing-action a{
+.landing-action a {
     border-radius: 30px;
     margin-top: 5%;
     width: 45%;
@@ -71,34 +72,39 @@ body{
 
 /* SERVICES */
 
-.services-section{
+.services-section {
     position: relative;
     padding: 100px 0;
 }
-.color-box{
+
+.color-box {
     background-color: #212F2F;
     position: absolute;
-    top:0;
-    right:0;
+    top: 0;
+    right: 0;
     width: 45%;
     height: 100%;
     z-index: 1;
 }
 
-.card-title{
+.card-title {
     letter-spacing: 5px;
-    margin:20px 0;
+    margin: 20px 0;
 }
 
-.service-cards{
+.service-cards {
     position: relative;
-    z-index: 2;  
+    z-index: 2;
     width: 65%;
     padding: 0%;
-    background-color: #fff;  /* or very light pastel for soft effect */
-    border-radius: 15px;     /* rounded edges */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* main “raised” shadow */
-    transition: transform 0.3s, box-shadow 0.3s; /* smooth hover effect */
+    background-color: #fff;
+    /* or very light pastel for soft effect */
+    border-radius: 15px;
+    /* rounded edges */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    /* main “raised” shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* smooth hover effect */
 }
 
 .service-cards:hover {
@@ -106,40 +112,40 @@ body{
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 
-.service-card{
+.service-card {
     border: none;
     border-radius: 10px;
 }
 
-.card .img-fluid{
+.card .img-fluid {
     width: 100%;
     height: 300px;
 }
 
 /* APPOINTMENT */
 
-.appointment-section{
+.appointment-section {
     padding: 5% 0;
 }
 
-.appointment-container{
+.appointment-container {
     width: 50%;
     background-color: white;
     border-radius: 20px;
 }
 
-.appointment-form{
+.appointment-form {
     padding: 10% 0;
 }
 
-.appointment-form button{
+.appointment-form button {
     border-radius: 20px;
     width: 20%;
     letter-spacing: 5px;
     align-items: end;
 }
 
-#contact-card{
+#contact-card {
     background-color: #212F2F;
     color: white;
     border: none;
@@ -147,27 +153,176 @@ body{
     padding: 2% 5%;
 }
 
-#contact-card .card-title{
+#contact-card .card-title {
     margin: 0.75rem 0;
 }
 
-#contact-card .card-text{
+#contact-card .card-text {
     font-size: 0.75rem;
     margin: 0.5rem 0;
 }
 
 .social-icon {
-    width: 20px;    /* size of icon */
+    width: 20px;
+    /* size of icon */
     height: 20px;
     margin: 10px 10px 0 0;
     transition: transform 0.2s ease;
 }
 
 .social-icon:hover {
-    transform: scale(1.2); /* hover zoom effect */
+    transform: scale(1.2);
+    /* hover zoom effect */
 }
 
 .social-link {
     display: inline-block;
 }
 
+@media (max-width: 380px) {
+    .wrapper {
+        height: 50vh;
+    }
+
+    .appointment-container {
+        width: 95% !important;
+    }
+
+    .appointment-container button {
+        width: 55% !important;
+    }
+
+    .card-group>.card {
+        margin-bottom: 0;
+    }
+
+    .landing-action a {
+        width: 80%!important;
+    }
+}
+
+@media (max-width: 435px) {
+    .wrapper {
+        height: 50vh;
+    }
+
+    .appointment-container {
+        width: 75% !important;
+    }
+
+    .card-group>.card {
+        margin-bottom: 0;
+    }
+}
+
+
+/* Mobile adjustments (phones up to 576px) */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h4.text {
+        font-size: 1rem;
+    }
+
+    .landing-action {
+        width: 90%;
+        /* take most of screen */
+        padding: 10% 5%;
+    }
+
+    .landing-action a {
+        width: 80%;
+        /* button wider for thumb tap */
+    }
+
+    .service-cards {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .card .img-fluid {
+        height: 180px;
+        /* shrink images */
+        object-fit: cover;
+    }
+
+    .appointment-container {
+        width: 90%;
+    }
+
+    .appointment-form button {
+        width: 100%;
+        /* full width button */
+    }
+
+    #contact-card .card-text {
+        font-size: 0.65rem;
+        /* smaller contact text */
+    }
+}
+
+/* Tablets (576px – 768px) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .landing-action {
+        width: 70%;
+        padding: 8% 5%;
+    }
+
+    .service-cards {
+        width: 85%;
+    }
+
+    .service-cards .card-text {
+        font-size: 0.75rem;
+    }
+
+    .card .img-fluid {
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .appointment-container {
+        width: 75%;
+    }
+
+    .appointment-container button {
+        width: 40%;
+    }
+}
+
+/* Small laptops (768px – 1024px) */
+@media (max-width: 1024px) {
+
+    .nav-item {
+        font-size: 0.75rem;
+    }
+
+    .landing-action h5 {
+        font-size: 1rem;
+    }
+
+    .landing-action a {
+        font-size: 0.75rem;
+        width: 60%;
+    }
+
+
+    .service-cards {
+        width: 80%;
+    }
+
+    .appointment-container {
+        padding: 0 5%;
+        width: 55%;
+    }
+
+    .appointment-container button {
+        width: 30%;
+    }
+}
