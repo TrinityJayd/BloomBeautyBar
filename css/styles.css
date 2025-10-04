@@ -215,6 +215,11 @@ body {
     .card-group>.card {
         margin-bottom: 0;
     }
+
+    .appointment-container button {
+        width: 60%!important;
+    }
+
 }
 
 
