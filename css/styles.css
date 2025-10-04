@@ -162,9 +162,9 @@ body {
     margin: 0.5rem 0;
 }
 
+
 .social-icon {
     width: 20px;
-    /* size of icon */
     height: 20px;
     margin: 10px 10px 0 0;
     transition: transform 0.2s ease;
@@ -178,6 +178,8 @@ body {
 .social-link {
     display: inline-block;
 }
+
+
 
 @media (max-width: 380px) {
     .wrapper {
